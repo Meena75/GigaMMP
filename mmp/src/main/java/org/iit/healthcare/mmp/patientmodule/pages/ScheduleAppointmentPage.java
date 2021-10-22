@@ -86,7 +86,7 @@ public class ScheduleAppointmentPage {
 		driver.findElement(By.id("datepicker")).click();
 		
 		String dateofAppointment=Utility.selectFutureDate(20);
-		 
+		System.out.println("date of appointment  "+ dateofAppointment);
 		 	 
 		driver.findElement(By.id("datepicker")).sendKeys(dateofAppointment);
 		System.out.println("The date selected in the datePicker:" + driver.findElement(By.id("datepicker")).getAttribute("value"));
